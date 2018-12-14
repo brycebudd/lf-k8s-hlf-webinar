@@ -14,13 +14,13 @@
 Organizations:
 
     # Organization controlling both peers and Orderers
-    - &AidTech
-        Name: AidTech
+    - &dlt-accel
+        Name: dlt-accel
 
         # ID to load the MSP definition as
-        ID: AidTechMSP
+        ID: DltAccelMSP
 
-        MSPDir: ./AidTechMSP
+        MSPDir: ./DltAccelMSP
 
         # turn off security for the peer
         AdminPrincipal: Role.MEMBER
@@ -109,14 +109,14 @@ Profiles:
         Orderer:
             <<: *OrdererDefaults
             Organizations:
-                - *AidTech
+                - *dlt-accel
         Consortiums:
             MyConsortium:
                 Organizations:
-                    - *AidTech
+                    - *dlt-accel
     MyChannel:
         Consortium: MyConsortium
         Application:
             <<: *ApplicationDefaults
             Organizations:
-                - *AidTech
+                - *dlt-accel

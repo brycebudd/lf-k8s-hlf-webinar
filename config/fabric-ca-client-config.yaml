@@ -45,7 +45,7 @@ url:
 # Membership Service Provider (MSP) directory
 # This is useful when the client is used to enroll a peer or orderer, so
 # that the enrollment artifacts are stored in the format expected by MSP.
-mspdir: ./AidTechMSP
+mspdir: ./DltAccelMSP
 
 #############################################################################
 #    TLS section for secure socket connection
@@ -104,13 +104,13 @@ csr:
   cn: ord-admin
   serialnumber:
   names:
-    - C: IE
-      ST: Dublin
-      L:
-      O: "AID:Tech"
-      OU: Blockchain
+      c: US
+      st: Pennsylvania
+      l: "North America"
+      o: "Capgemini"
+      ou: Blockchain
   hosts:
-    - Alejandros-MacBook-Pro.local
+    - dlt-accel.local
 
 #############################################################################
 #  Registration section used to register a new identity with fabric-ca server
