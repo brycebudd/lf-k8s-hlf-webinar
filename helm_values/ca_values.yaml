@@ -35,7 +35,7 @@ config:
       o: "Capgemini"
       ou: Blockchain
   affiliations:
-    aidtech: []
+    dlt-accel: []
 
 affinity:
   podAntiAffinity:
