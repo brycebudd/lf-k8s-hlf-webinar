@@ -9,12 +9,12 @@ ingress:
   path: /
   hosts:
     # TODO: Change this back
-    - ca.dlt-accel.xyz
+    - ca.dlt-accel.local
   tls:
     - secretName: ca--tls
       hosts:
         # TODO: Change this back
-        - ca.dlt-accel.xyz
+        - ca.dlt-accel.local
 
 persistence:
   accessMode: ReadWriteOnce
